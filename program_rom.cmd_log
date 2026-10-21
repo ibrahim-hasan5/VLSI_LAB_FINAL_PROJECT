@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/ise/VLSI/eight_bit_cpu_22201142/program_rom.xst" -ofn "/home/ise/VLSI/eight_bit_cpu_22201142/program_rom.syr" 

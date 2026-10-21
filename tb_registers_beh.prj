@@ -1,0 +1,2 @@
+vhdl work "registers.vhd"
+vhdl work "registers_tb.vhd"
