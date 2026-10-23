@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "/home/ise/VLSI/eight_bit_cpu_22201142/tb_registers_isim_beh.exe" -prj "/home/ise/VLSI/eight_bit_cpu_22201142/tb_registers_beh.prj" "tb_registers" 
+-intstyle "ise" -incremental -lib "secureip" -o "/home/ise/VLSI/eight_bit_cpu_22201142/tb_control_unit_isim_beh.exe" -prj "/home/ise/VLSI/eight_bit_cpu_22201142/tb_control_unit_beh.prj" "work.tb_control_unit" 

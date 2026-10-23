@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/ise/VLSI/eight_bit_cpu_22201142/control_unit.xst" -ofn "/home/ise/VLSI/eight_bit_cpu_22201142/control_unit.syr" 

@@ -33,6 +33,16 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="alu.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="alu_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="alu_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="control_unit.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="control_unit.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="control_unit.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="control_unit.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="control_unit.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="control_unit.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="control_unit.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="control_unit.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="control_unit_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="control_unit_xst.xrpt"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
@@ -69,13 +79,15 @@
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="registers_xst.xrpt"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_alu_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_alu_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_control_unit_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_control_unit_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tb_control_unit_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_control_unit_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_pc_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_pc_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_program_rom_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_program_rom_stx_beh.prj"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_registers_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_registers_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tb_registers_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_registers_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
@@ -85,12 +97,15 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1792616529" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1792616529">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1792617817" xil_pn:in_ck="-1403101652828450408" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1792617817">
+    <transform xil_pn:end_ts="1792770990" xil_pn:in_ck="-591336562541854739" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1792770990">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="alu.vhd"/>
       <outfile xil_pn:name="alu_tb.vhd"/>
+      <outfile xil_pn:name="control_unit.vhd"/>
+      <outfile xil_pn:name="control_unit_tb.vhd"/>
       <outfile xil_pn:name="pc.vhd"/>
       <outfile xil_pn:name="pc_tb.vhd"/>
       <outfile xil_pn:name="program_rom.vhd"/>
@@ -98,23 +113,25 @@
       <outfile xil_pn:name="registers.vhd"/>
       <outfile xil_pn:name="registers_tb.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1792617821" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-7971781071372257437" xil_pn:start_ts="1792617821">
+    <transform xil_pn:end_ts="1792770994" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-8627598697370017397" xil_pn:start_ts="1792770994">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1792617821" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="5418315431611609569" xil_pn:start_ts="1792617821">
+    <transform xil_pn:end_ts="1792770994" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="7710007703947455497" xil_pn:start_ts="1792770994">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1792616529" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="7132687337880505860" xil_pn:start_ts="1792616529">
+    <transform xil_pn:end_ts="1792770854" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="7823862498551582604" xil_pn:start_ts="1792770854">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1792617821" xil_pn:in_ck="-1403101652828450408" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1792617821">
+    <transform xil_pn:end_ts="1792770994" xil_pn:in_ck="-591336562541854739" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1792770994">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="alu.vhd"/>
       <outfile xil_pn:name="alu_tb.vhd"/>
+      <outfile xil_pn:name="control_unit.vhd"/>
+      <outfile xil_pn:name="control_unit_tb.vhd"/>
       <outfile xil_pn:name="pc.vhd"/>
       <outfile xil_pn:name="pc_tb.vhd"/>
       <outfile xil_pn:name="program_rom.vhd"/>
@@ -122,7 +139,7 @@
       <outfile xil_pn:name="registers.vhd"/>
       <outfile xil_pn:name="registers_tb.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1792617823" xil_pn:in_ck="-1403101652828450408" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="8730026805583875014" xil_pn:start_ts="1792617821">
+    <transform xil_pn:end_ts="1792770997" xil_pn:in_ck="-591336562541854739" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8312882255650936714" xil_pn:start_ts="1792770994">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -130,19 +147,20 @@
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="tb_registers_beh.prj"/>
-      <outfile xil_pn:name="tb_registers_isim_beh.exe"/>
+      <outfile xil_pn:name="tb_control_unit_beh.prj"/>
+      <outfile xil_pn:name="tb_control_unit_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1792617823" xil_pn:in_ck="-6232410297820443742" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-131240682406814029" xil_pn:start_ts="1792617823">
+    <transform xil_pn:end_ts="1792770997" xil_pn:in_ck="-8100091268476808698" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="1204869513624798211" xil_pn:start_ts="1792770997">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="tb_registers_isim_beh.wdb"/>
+      <outfile xil_pn:name="tb_control_unit_isim_beh.wdb"/>
     </transform>
     <transform xil_pn:end_ts="1792615339" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1792615339">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
   </transforms>
 
