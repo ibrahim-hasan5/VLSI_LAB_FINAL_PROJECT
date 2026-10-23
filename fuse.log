@@ -1,21 +1,32 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/ise/VLSI/eight_bit_cpu_22201142/tb_control_unit_isim_beh.exe -prj /home/ise/VLSI/eight_bit_cpu_22201142/tb_control_unit_beh.prj work.tb_control_unit 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/ise/VLSI/eight_bit_cpu_22201142/tb_cpu_isim_beh.exe -prj /home/ise/VLSI/eight_bit_cpu_22201142/tb_cpu_beh.prj work.tb_cpu 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 1
 Turning on mult-threading, number of parallel sub-compilation jobs: 0 
 Determining compilation order of HDL files
+Parsing VHDL file "/home/ise/VLSI/eight_bit_cpu_22201142/registers.vhd" into library work
+Parsing VHDL file "/home/ise/VLSI/eight_bit_cpu_22201142/program_rom.vhd" into library work
+Parsing VHDL file "/home/ise/VLSI/eight_bit_cpu_22201142/pc.vhd" into library work
 Parsing VHDL file "/home/ise/VLSI/eight_bit_cpu_22201142/control_unit.vhd" into library work
-Parsing VHDL file "/home/ise/VLSI/eight_bit_cpu_22201142/control_unit_tb.vhd" into library work
+Parsing VHDL file "/home/ise/VLSI/eight_bit_cpu_22201142/alu.vhd" into library work
+Parsing VHDL file "/home/ise/VLSI/eight_bit_cpu_22201142/cpu_top.vhd" into library work
+Parsing VHDL file "/home/ise/VLSI/eight_bit_cpu_22201142/cpu_tb.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 95304 KB
-Fuse CPU Usage: 610 ms
+Fuse Memory Usage: 96840 KB
+Fuse CPU Usage: 670 ms
 Compiling package standard
 Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity pc [pc_default]
+Compiling architecture behavioral of entity program_rom [program_rom_default]
 Compiling architecture behavioral of entity control_unit [control_unit_default]
-Compiling architecture behavior of entity tb_control_unit
+Compiling architecture behavioral of entity alu [alu_default]
+Compiling architecture behavioral of entity registers [registers_default]
+Compiling architecture structural of entity cpu_top [cpu_top_default]
+Compiling architecture behavior of entity tb_cpu
 Time Resolution for simulation is 1ps.
-Compiled 5 VHDL Units
-Built simulation executable /home/ise/VLSI/eight_bit_cpu_22201142/tb_control_unit_isim_beh.exe
-Fuse Memory Usage: 103928 KB
-Fuse CPU Usage: 640 ms
-GCC CPU Usage: 220 ms
+Compiled 16 VHDL Units
+Built simulation executable /home/ise/VLSI/eight_bit_cpu_22201142/tb_cpu_isim_beh.exe
+Fuse Memory Usage: 111640 KB
+Fuse CPU Usage: 820 ms
+GCC CPU Usage: 390 ms
